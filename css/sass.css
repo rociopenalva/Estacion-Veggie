@@ -1,0 +1,167 @@
+/*------------------------------------
+- COLOR primary
+------------------------------------*/
+.bg-light {
+  background-color: #ffece6 !important; }
+
+.navbar-light {
+  color: #103737 !important; }
+
+.importante__titulo {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3rem;
+  color: #103737; }
+
+.importante__texto {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  padding: 20px 0px;
+  margin: 20px 0px;
+  background-color: #ffece6;
+  border-radius: 5px; }
+
+#historia article p {
+  color: #FFF !important;
+  background-color: #103737 !important; }
+
+#historia a {
+  color: #ff9a76 !important; }
+
+.otherdiv1 {
+  background: #ffece6;
+  padding: 10px 0px; }
+
+.otherdiv2 {
+  background: #ff9a76 !important;
+  padding-top: 25px; }
+
+form {
+  background: #ffece6; }
+
+.alert-primary {
+  color: #fa4100;
+  background-color: #ff130142;
+  border-color: #ff12112d; }
+
+.alert-primary hr {
+  border-top-color: #ffece6; }
+
+.alert-primary .alert-link {
+  color: #c73400; }
+
+.badge-primary {
+  color: #212529;
+  background-color: #ff9a76; }
+
+.badge-primary[href]:hover,
+.badge-primary[href]:focus {
+  color: #212529;
+  background-color: #ff7443; }
+
+.bg-primary {
+  background-color: #ff9a76 !important; }
+
+a.bg-primary:hover,
+a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+  background-color: #ff7443 !important; }
+
+.border-primary {
+  border-color: #ff9a76 !important; }
+
+.btn-primary {
+  color: #212529;
+  background-color: #ff9a76;
+  border-color: #ff9a76; }
+
+.btn-primary:hover {
+  color: #212529;
+  background-color: #ff7f52;
+  border-color: #ff7443; }
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 154, 118, 0.5); }
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #212529;
+  background-color: #ff9a76;
+  border-color: #ff9a76; }
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #212529;
+  background-color: #ff7443;
+  border-color: #ff6933; }
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 154, 118, 0.5); }
+
+.btn-outline-primary {
+  color: #ff9a76;
+  background-color: transparent;
+  border-color: #ff9a76; }
+
+.btn-outline-primary:hover {
+  color: #212529;
+  background-color: #ff9a76;
+  border-color: #ff9a76; }
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 154, 118, 0.5); }
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+  color: #ff9a76;
+  background-color: transparent; }
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #212529;
+  background-color: #ff9a76;
+  border-color: #ff9a76; }
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 154, 118, 0.5); }
+
+.list-group-item-primary {
+  color: #fa4100;
+  background-color: #ff12112d; }
+
+.list-group-item-primary.list-group-item-action:hover,
+.list-group-item-primary.list-group-item-action:focus {
+  color: #fa4100;
+  background-color: #ffece6; }
+
+.list-group-item-primary.list-group-item-action.active {
+  color: #212529;
+  background-color: #fa4100;
+  border-color: #fa4100; }
+
+.table-primary,
+.table-primary > th,
+.table-primary > td {
+  background-color: #ff12112d; }
+
+.table-hover .table-primary:hover {
+  background-color: #ffece6; }
+
+.table-hover .table-primary:hover > td,
+.table-hover .table-primary:hover > th {
+  background-color: #ffece6; }
+
+.text-primary {
+  color: #ff9a76 !important; }
+
+a.text-primary:hover,
+a.text-primary:focus {
+  color: #ff7443 !important; }

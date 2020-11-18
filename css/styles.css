@@ -1,0 +1,307 @@
+/*Estilos generales*/
+
+body {
+    font-family: montserrat, sans-serif;
+    min-height: 100vh;
+    
+    /* por la navbar fixed*/
+    margin-top: 72px;
+}
+
+.contenido {
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase
+}
+
+/*Header*/
+
+.collapse navbar-collapse {
+    justify-items: end;
+}
+
+.contenido /* solo cuando es cortita la pag */   {
+    min-height: 80vh;
+    /* will cover the 80% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 150px;
+    /* height of your footer */
+}
+
+/*contenido*/
+
+.somosEstacion {
+    color: #FFF;
+    text-transform: uppercase;
+    /*font-size: 5vw;*/
+    font-family: 'Abril Fatface', cursive;
+    filter: drop-shadow(2px 2px 2px rgba(43, 43, 43, 0.61));
+    letter-spacing: 3pt;
+    text-align: center;
+}
+
+/* Subtitulos q agregaré después en carrousel*/
+
+.subtitulos {
+    color: #FFF;
+    margin-bottom: 6vh;
+    margin-top: 6vh;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    filter: drop-shadow(2px 2px 2px rgba(43, 43, 43, 0.71))
+}
+
+.carousel-control-next, .carousel-control-prev {
+        width: 10%;
+
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 15px;
+}
+
+.carousel-indicators {
+    margin-bottom: 15vh;
+}
+
+/*Carrousel grid contenido*/
+.dentro {
+    display: grid;
+    grid: 1;
+    margin: auto;
+    justify-items: center;
+
+}
+
+.importante__texto{
+    height: 70vh;
+    background-image: url(img/fondo-saludable.jpg);
+    background-size: cover;
+    align-content: center;
+}
+
+#historia {
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+#historia article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    width: 100%;
+
+}
+
+#historia article p {
+
+    width: 30%;
+    /*ancho texto*/
+    margin: 0px 10px;
+    height: inherit;
+    color: white;
+    font-weight: 200;
+    padding: 25px;
+    position: relative;
+    z-index: 1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#historia a {
+
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#historia article img {
+    width: 50vw;
+    position: relative;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#historia article:hover img {
+    -webkit-transform: -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+/*restaurants*/
+
+#sucursales {
+    border-radius: 4px;
+    width: 1400px;
+    margin: auto;
+}
+
+#sucursales article {
+    width: 33%;
+    display: inline-block;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: fit-content(2fr repeat(2, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    height: 450px;
+
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/SanJusto.png);
+    font-size: 30px;
+    color: white;
+    background-size: cover;
+}
+
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/Ramos_Mejia.png);
+    font-size: 30px;
+    color: 000;
+    background-size: cover;
+    background-color: burlywood
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/liniers.png);
+    font-size: 30px;
+    color: white;
+    background-size: cover;
+}
+
+div h2 {
+    filter: drop-shadow(2px 3px 2px rgba(43, 43, 43, 0.71));
+    letter-spacing: 1px;
+}
+
+.mapa {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.mapa iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.otherdiv1 {
+    background-color: #ffeadb
+}
+
+.otherdiv2 {
+    background-color: aquamarine
+}
+
+#PROMOS {
+    background: url(img/fondo-tabla.png) no-repeat 50%;
+    margin: auto;
+
+}
+
+/* contacto */
+
+form {
+    width: 500px;
+    margin: auto;
+
+    border: solid 2px #103737;
+    padding: 50px 20px;
+}
+
+#sticky-footer {
+    background-color: #ff9a76;
+    flex-shrink: none;
+    width: 100%;
+    min-height: 150px;
+    bottom: 0;
+}
+
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .somosEstacion {
+        font-size: 55px;
+       
+    }
+    .subtitulos {
+        font-size: 18px;
+     
+    }
+    
+    .importante__texto{
+        background-image: url(img/fondo-saludable-cel.jpg);
+        align-content: baseline;
+        margin-top: 20%;
+    }
+    
+    body{
+        background: /*blue !important;*/
+    }
+    
+     .navbar-brand {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .somosEstacion {
+        font-size: 44px;
+        line-height: 42px;
+    }
+    .subtitulos {
+    font-size: 18px;
+    text-align: center;
+}
+    body{
+        background: /*red !important;*/
+    }
+}
+
+@media screen and (min-width: 1099px) {
+    .somosEstacion {
+        font-size: 72px;
+        line-height: 72px;
+    }
+    
+    body{
+        background: /*violet !important;*/
+    }
+}
