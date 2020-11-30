@@ -87,46 +87,29 @@ h1 {
     align-content: center;
 }
 
-#historia {
-    width: 1400px;
-    margin: auto;
-    display: flex;
-    flex-flow: column;
-}
 
 #historia article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px;
-
+    margin: 40px 0px;
 }
 
-#historia article p {
 
-    width: 30%;
-    /*ancho texto*/
-    margin: 0px 10px;
-    height: inherit;
+#historia article div p {
+
     color: white;
     font-weight: 200;
-    padding: 25px;
-    position: relative;
-    z-index: 1;
+    padding: 20px;
+
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
 
 #historia a {
-
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
 }
 
 #historia article img {
-    width: 50vw;
-    position: relative;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -271,9 +254,6 @@ form {
         margin-top: 20%;
     }
     
-    body{
-        background: /*blue !important;*/
-    }
     
      .navbar-brand {
         width: 200px;
