@@ -15,6 +15,7 @@
         "nodemon": "^2.0.6"
     },
     "dependencies": {
-        "term-size": "^2.2.1"
+        "term-size": "^2.2.1",
+        "wowjs": "^1.1.3"
     }
 }
