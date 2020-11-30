@@ -24,6 +24,41 @@ h1 {
     justify-items: end;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.8);
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0,0,0,.8);
+    
+}
+
+a.nav-link
+{
+    position: relative;
+}
+
+a.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+    font-weight: 600;
+}
+
+a.nav-link:hover:before {
+  visibility: visible;
+  height: 2px;
+}
 .contenido /* solo cuando es cortita la pag */   {
     min-height: 80vh;
     /* will cover the 80% of viewport */
