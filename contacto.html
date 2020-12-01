@@ -5,20 +5,27 @@
     <meta charset="UTF-8">
     <title>Contacto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="Reservar restaurante vegetariano y vegano">
-   <meta name="keywords"  content="RESTAURANT VEGANO, RESTAURANT VEGETARIANO, RESTAURANTE VEGANO, COMIDA VEGANA, RESERVAR RESTAURANTE, MENÚ VEGANO">
-    
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Reservar restaurante vegetariano y vegano">
+    <meta name="keywords" content="RESTAURANT VEGANO, RESTAURANT VEGETARIANO, RESTAURANTE VEGANO, COMIDA VEGANA, RESERVAR RESTAURANTE, MENÚ VEGANO">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/sass.css">
     <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap" rel="stylesheet">
 
+    <!--animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 
@@ -62,59 +69,108 @@
         </div>
     </nav>
 
+    <header id="masthead" class="bg4">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-xs-12 col-md-3">
+                    <h1>CONTACTO</h1>
 
-    <div class="contenido">
-        <h1>Contacto</h1>
-        <p>Escribinos, estaremos en contacto a la brevedad.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid contenido">
+        <section class=" pt-5">
+            <div class="container">
 
-        <form action="#index" method="post">
+                <div class="row ">
 
-            <legend>INFORMACIÓN</legend>
-            <input type="text" placeholder="Tu nombre" id="nombreUsuario" />
-            <br>
-            <br>
-            <input type="email" placeholder="Tu email" id="emailUsuario" />
-            <br>
-            <br>
+                    <div class="col-md-6 mt-3 wow animate__animated animate__fadeInLeft " data-wow-delay=".2s">
+                        <h2 class="formtitle">Estamos para ayudar</h2>
+                        <p>Este es un espacio para que puedas hacernos las consultas que desees. En breve estaremos contactándonos. En caso de necesitar una respuesta más rápida podes comunicarte a los siguientes números en el horario de 10 a 22hs. </p>
 
-            <label for="nombre_apellido">Tipo de consulta</label>
-            <select name="talles">
+                        <div class="find-widget">
+                            Company: <a href="https://hostriver.ro">HostRiver</a>
+                        </div>
+                        <div class="find-widget">
+                            Address: <a href="#">4435 Berkshire Circle Knoxville</a>
+                        </div>
+                        <div class="find-widget">
+                            Phone: <a href="#">+ 879-890-9767</a>
+                        </div>
 
-                <option value="res">Reservas</option>
+                        <div class="find-widget">
+                            Website: <a href="https://uny.ro">www.uny.ro</a>
+                        </div>
+                        <div class="find-widget">
+                            Program: <a href="#">Mon to Sat: 09:30 AM - 10.30 PM</a>
+                        </div>
+                    </div>
+                    <!-- contact form -->
+                    <div class="col-md-6 wow animate__animated animate__fadeInRight" data-wow-delay=".2s">
+                        <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                            <!-- Nombre -->
+                            <div class="form-group label-floating">
+                                <label class="control-label" for="name">Nombre</label>
+                                <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <!-- email -->
+                            <div class="form-group label-floating">
+                                <label class="control-label" for="email">Email</label>
+                                <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <!-- Subject -->
+                            <div class="form-group label-floating">
+                                <label class="control-label">Tipo de consulta</label>
+                                <select class="form-control">
 
-                <option value="men">Menú</option>
+                                    <option value="res">Reservas</option>
 
-                <option value="at">Atención al público</option>
+                                    <option value="men">Menú</option>
 
-            </select>
+                                    <option value="at">Atención al público</option>
+                                    <option value="ot">Otro</option>
 
-            <br>
-            <br>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <!-- Mensaje -->
+                            <div class="form-group label-floating">
+                                <label for="message" class="control-label">Mensaje</label>
+                                <textarea class="form-control" placeholder="Dejá tu comentario o consulta" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
 
-            <textarea id="Comentario" placeholder="Dejá tu comentario o consulta"></textarea>
+                            <div class="form-group">
+                                <input type="checkbox" name="acepta" value="1" />
+                                <label for="nombre_apellido"><small>Acepto recibir novedades de Estación Veggie a mi correo.</small></label>
+                            </div>
 
-            <br>
-            <br>
+                            <!-- Form Submit -->
+                            <div class="form-submit mt-4">
+                                <input type="reset" value="Borrar información" />
+                                <input type="submit" value="Enviar información" />
 
-            <input type="checkbox" name="acepta" value="1" />
-            <label for="nombre_apellido"><small>Acepto recibir novedades de Estación Veggie a mi correo.</small></label>
-            <br>
-            <br>
-            <input type="reset" value="Borrar información" />
-            <input type="submit" value="Enviar información" />
+                            </div>
 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-        </form>
     </div>
 
-    <br>
+
 
     <footer id="sticky-footer" class="py-4">
         <div class="container text-center">
             <small>Copyright &copy; Estación Veggie</small>
         </div>
     </footer>
+
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
