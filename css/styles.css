@@ -30,7 +30,7 @@ body {
 }
 
 .bg3{
-    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%), url(img/contacto-header.jpg);
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%), url(img/promo-header.jpg);
 }
 
 .bg4{
@@ -272,11 +272,7 @@ a.nav-link:hover:before {
     background-color: aquamarine
 }
 
-#PROMOS {
-    background: url(img/fondo-tabla.png) no-repeat 50%;
-    margin: auto;
 
-}
 
 /* contacto */
 

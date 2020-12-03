@@ -219,7 +219,13 @@ button.bg-primary:focus {
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-    background-color: $primary_t4;
+    background-color: $primary_t1;
+}
+
+.table-secondary,
+.table-secondary > th,
+.table-secondary > td {
+    background-color: $naranjaclaro;
 }
 
 .table-hover .table-primary:hover {

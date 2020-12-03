@@ -158,7 +158,12 @@ button.bg-primary:focus {
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #ff12112d; }
+  background-color: #ff9a76; }
+
+.table-secondary,
+.table-secondary > th,
+.table-secondary > td {
+  background-color: #FFECE6; }
 
 .table-hover .table-primary:hover {
   background-color: #ffece6; }
