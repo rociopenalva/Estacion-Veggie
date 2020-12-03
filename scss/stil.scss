@@ -17,22 +17,24 @@ $primary_shadow: rgba(255, 154, 118, 0.5);
 $primary_text_color_dark_bright: #212529;
 
 
-$verde_oscuro: #103737;
+$verde: #103737;
 $blanco: #FFF;
+$naranjaclaro: #FFECE6;
 
+
+.titulo__pagina {
+    color: $verde;
+}
 
 .bg-light {
     background-color: $primary_t3 !important;
 }
 
-.navbar-light {
-    color: $verde_oscuro !important;
-}
 
 .importante__titulo {
     font-family: 'Abril Fatface', cursive;
     font-size: 3rem;
-    color: $verde_oscuro;
+    color: $verde;
 
 }
 
@@ -49,7 +51,7 @@ $blanco: #FFF;
 #historia {
     article p {
         color: $blanco !important;
-        background-color: $verde_oscuro !important;
+        background-color: $verde !important;
     }
     
     a {
@@ -68,9 +70,19 @@ $blanco: #FFF;
    
 }
 
-form {
-    background: $primary_t3;
+.tarjeta {
+    padding: 2rem 0.7rem;
+    background: $verde;
+    color: $blanco;
+    display: grid;
+    justify-content: space-around;
+    
+     -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border-radius: 10px;
 }
+
 
 .alert-primary {
     color: $primary_t5;

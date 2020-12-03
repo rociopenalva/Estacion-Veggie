@@ -1,11 +1,11 @@
 /*------------------------------------
 - COLOR primary
 ------------------------------------*/
+.titulo__pagina {
+  color: #103737; }
+
 .bg-light {
   background-color: #ffece6 !important; }
-
-.navbar-light {
-  color: #103737 !important; }
 
 .importante__titulo {
   font-family: 'Abril Fatface', cursive;
@@ -35,8 +35,16 @@
   background: #ff9a76 !important;
   padding-top: 25px; }
 
-form {
-  background: #ffece6; }
+.tarjeta {
+  padding: 2rem 0.7rem;
+  background: #103737;
+  color: #FFF;
+  display: grid;
+  justify-content: space-around;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border-radius: 10px; }
 
 .alert-primary {
   color: #fa4100;

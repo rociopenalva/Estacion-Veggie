@@ -87,13 +87,12 @@ a.nav-link:hover:before {
   height: 2px;
 }
 .contenido /* solo cuando es cortita la pag */   {
-    min-height: 80vh;
+    
     /* will cover the 80% of viewport */
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 150px;
-    /* height of your footer */
+    padding-bottom: 50px;
 }
 
 /*contenido*/
@@ -281,14 +280,10 @@ a.nav-link:hover:before {
 
 /* contacto */
 
-.formulario {
-    width: 500px;
-    margin: auto;
-
-    border: solid 2px #103737;
-    padding: 50px 20px;
+.formtitle{
+    text-transform: uppercase;
+    font-weight: 600;
 }
-
 
 
 #sticky-footer {
@@ -333,9 +328,7 @@ a.nav-link:hover:before {
     font-size: 18px;
     text-align: center;
 }
-    body{
-        background: /*red !important;*/
-    }
+    
 }
 
 @media screen and (min-width: 1099px) {
