@@ -5,7 +5,7 @@ body {
     min-height: 100vh;
     
     /* por la navbar fixed*/
-    margin-top: 72px;
+    margin-top: 71px;
 }
 
 .contenido {
@@ -187,91 +187,16 @@ a.nav-link:hover:before {
 
 /*restaurants*/
 
-#sucursales {
-    border-radius: 4px;
-    width: 1400px;
-    margin: auto;
+
+iframe {
+    min-height: 50vh;
 }
 
-#sucursales article {
-    width: 33%;
-    display: inline-block;
-}
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: fit-content(2fr repeat(2, 1fr));
-    grid-column-gap: 10px;
-    grid-row-gap: 0px;
-    height: 450px;
-
-}
-
-.div1 {
-    grid-area: 1 / 1 / 2 / 2;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(img/SanJusto.png);
-    font-size: 30px;
-    color: white;
-    background-size: cover;
-}
-
-
-.div2 {
-    grid-area: 1 / 2 / 2 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(img/Ramos_Mejia.png);
-    font-size: 30px;
-    color: 000;
-    background-size: cover;
-    background-color: burlywood
-}
-
-.div3 {
-    grid-area: 1 / 3 / 2 / 4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(img/liniers.png);
-    font-size: 30px;
-    color: white;
-    background-size: cover;
-}
 
 .somosEstacion {
     filter: drop-shadow(2px 3px 2px rgba(43, 43, 43, 0.71));
     letter-spacing: 1px;
 }
-
-.mapa {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-}
-
-.mapa iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
-.otherdiv1 {
-    background-color: #ffeadb
-}
-
-.otherdiv2 {
-    background-color: aquamarine
-}
-
 
 
 /* contacto */

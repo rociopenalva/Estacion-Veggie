@@ -4,6 +4,10 @@
 .titulo__pagina {
   color: #103737; }
 
+@media (max-width: 576px) {
+  .titulo__pagina {
+    font-size: 200%; } }
+
 .bg-light {
   background-color: #ffece6 !important; }
 
@@ -26,6 +30,33 @@
 
 #historia a {
   color: #ff9a76 !important; }
+
+.sucursal {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; }
+  .sucursal h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    filter: drop-shadow(2px 3px 2px rgba(43, 43, 43, 0.71)); }
+
+#SanJusto {
+  background-image: url(img/SanJusto.png);
+  background-size: cover;
+  min-height: 50vh; }
+
+#Ramos {
+  background-image: url(img/Ramos_Mejia.png);
+  background-size: cover;
+  min-height: 50vh; }
+
+#Liniers {
+  background-image: url(img/Liniers.png);
+  background-size: cover;
+  min-height: 50vh; }
 
 .otherdiv1 {
   background: #ffece6;

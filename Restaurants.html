@@ -6,19 +6,26 @@
     <title>Restaurants</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Restaurantes vegetarianos y veganos en CABA y GBA OESTE">
-   <meta name="keywords"  content="RESTAURANT VEGANO, RESTAURANT VEGETARIANO, RESTAURANTE VEGANO, CABA, RESTAURANT VEGANO SAN JUSTO, RESTAURANT VEGANO MORÓN">
-    
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="keywords" content="RESTAURANT VEGANO, RESTAURANT VEGETARIANO, RESTAURANTE VEGANO, CABA, RESTAURANT VEGANO SAN JUSTO, RESTAURANT VEGANO MORÓN">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/sass.css">
     <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap" rel="stylesheet">
 
+    <!--animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 
@@ -63,45 +70,51 @@
     </nav>
 
 
-    <div class="contenido">
-        <h1>Restaurants</h1>
+    <header id="masthead" class="bg3">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-xs-12 col-md-3">
+                    <h1 class="titulo__pagina">Restaurants</h1>
+                    <p>Estas son nuestras sucursales.</p>
 
-        <p>Estas son nuestras sucursales.</p>
-
-        <section id="container sucursales">
-            <div class="container parent">
-                <div class="div1">
-                    <h2>San Justo</h2>
                 </div>
-                <div class="div2 ">
-                    <h2>Morón</h2>
-                </div>
-                <div class="div3">
-                    <h2>Liniers</h2>
-                </div>
-                <div class="otherdiv1"><i class="fas fa-map-marker-alt"></i> Arieta 2215
-                    <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3425900481175!2d-58.572460284336685!3d-34.67130206858514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7ccb5b6e327%3A0x68b8e68d87a5f6cd!2sAv.%20Dr.%20Ignacio%20Arieta%202215%2C%20San%20Justo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1603751581754!5m2!1ses-419!2sar" width=auto height=auto frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                </div>
-                <div class="otherdiv1"> <i class="fas fa-map-marker-alt"></i> Alte. Brown 523
-                    <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3214.6129268480568!2d-58.6177329414691!3d-34.65069450617875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7641a427649%3A0x620701bb5761490d!2sAlmirante%20Brown%20523!5e0!3m2!1ses-419!2sar!4v1603752792225!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                </div>
-                <div class="otherdiv1"><i class="fas fa-map-marker-alt"></i> Av. Rivadavia 11400
-
-                    <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.655645148363!2d-58.524971570750346!3d-34.63897679538431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8475d6586e3%3A0xe8c3eb54b4762a74!2sAv.%20Rivadavia%2011400-11302%2C%20C1408ABN%20CABA!5e0!3m2!1ses-419!2sar!4v1603753050407!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                </div>
-
-                <div class="otherdiv2">Tel: 4484-5915</div>
-                <div class="otherdiv2">Tel: 4334-5881</div>
-                <div class="otherdiv2">Tel: 4478-9973</div>
             </div>
-        </section>
-    </div>
+
+        </div>
+    </header>
+
+    <section class="bg-primary row no-gutters wow animate__animated animate__fadeInDown">
+        <article class=" sucursal col-12 col-md-3" id="SanJusto">
+            <h2 class="col-12">San Justo</h2>
+            <div class="col-12"><i class="fas fa-map-marker-alt"></i> Arieta 2215</div>
+            <div><i class="fas fa-phone"></i>  4484-5915</div>
+        </article>
+        
+        <article class=" col-12 col-md-9"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13125.432577566151!2d-58.56755184227131!3d-34.670909412709406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7ccb5b6e327%3A0x68b8e68d87a5f6cd!2sAv.%20Dr.%20Ignacio%20Arieta%202215%2C%20San%20Justo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1607298274443!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </article>
+    </section>
+    
+        <section class="bg-primary row no-gutters wow animate__animated animate__fadeInDown animate__delay-0.2s">
+        <article class=" sucursal col-12 col-md-3" id="Ramos">
+            <h2 class="col-12">Ramos Mejía</h2>
+            <div class="col-12"><i class="fas fa-map-marker-alt"></i> Alte. Brown 523</div>
+            <div><i class="fas fa-phone"></i>  4334-5881</div>
+        </article>
+        
+        <article class=" col-12 col-md-9"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.056960205171!2d-58.560210666642455!3d-34.64339928750123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc80a89e8f815%3A0x39c6be8c9780e003!2sAlmte.%20Brown%20523%2C%20B1704AKM%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1607316414361!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </article>
+    </section>
+    
+        <section class="bg-primary row no-gutters wow animate__animated animate__fadeInDown animate__delay-0.2s">
+        <article class=" sucursal col-12 col-md-3" id="Liniers">
+            <h2 class="col-12">Liniers</h2>
+            <div class="col-12"><i class="fas fa-map-marker-alt"></i> Av. Rivadavia 11400</div>
+            <div><i class="fas fa-phone"></i>  4478-9973</div>
+        </article>
+        
+        <article class=" col-12 col-md-9"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4422.421328027952!2d-58.52737707920078!3d-34.63967672099466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8475a462a6b%3A0x28b3eb723b94abc5!2sAv.%20Rivadavia%2011400%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1607316714132!5m2!1ses-419!2sar" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </article>
+    </section>
 
     <footer id="sticky-footer" class="py-4">
         <div class="container text-center">
