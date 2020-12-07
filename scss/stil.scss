@@ -1,5 +1,3 @@
-
-
 /*------------------------------------
 - COLOR primary
 ------------------------------------*/
@@ -24,14 +22,14 @@ $naranjaclaro: #FFECE6;
 
 .titulo__pagina {
     color: $verde;
-    
+
 }
 
-@media (max-width: 576px) {  
-  .titulo__pagina {
-  	font-size:10vw;
-  }
-    
+@media (max-width: 576px) {
+    .titulo__pagina {
+        font-size: 10vw;
+    }
+
     #masthead p {
         text-align: center;
     }
@@ -60,15 +58,45 @@ $naranjaclaro: #FFECE6;
 }
 
 #historia {
-    article p {
+
+    article {
+        margin: 40px 0px;
+    }
+
+    p {
         color: $blanco !important;
         background-color: $verde !important;
+        margin: 10px 0px;
+        font-weight: 200;
+        padding: 20px;
     }
-    
+
     a {
         color: $primary_t1 !important;
+        font-weight: 600;
+        text-decoration: none;
     }
+
+    article p {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+    img {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
 }
+
+
 
 .sucursal {
     display: grid;
@@ -76,8 +104,8 @@ $naranjaclaro: #FFECE6;
     align-items: center;
     text-align: center;
     color: white;
-    
-    h2{
+
+    h2 {
         font-weight: 600;
         text-transform: uppercase;
         text-align: center;
@@ -85,31 +113,24 @@ $naranjaclaro: #FFECE6;
     }
 }
 
-#SanJusto { background-image: url(img/SanJusto.png);
+#SanJusto {
+    background-image: url(img/SanJusto.png);
     background-size: cover;
     min-height: 50vh;
 }
 
-#Ramos { background-image: url(img/Ramos_Mejia.png);
+#Ramos {
+    background-image: url(img/Ramos_Mejia.png);
     background-size: cover;
     min-height: 50vh;
 }
 
-#Liniers { background-image: url(img/Liniers.png);
+#Liniers {
+    background-image: url(img/Liniers.png);
     background-size: cover;
     min-height: 50vh;
 }
 
-.otherdiv1 {
-    background: $primary_t3;
-    padding: 10px 0px;
-}
-
-.otherdiv2 {
-    background: $primary_t1 !important;
-    padding-top: 25px;
-   
-}
 
 .tarjeta {
     padding: 2rem 0.7rem;
@@ -117,8 +138,8 @@ $naranjaclaro: #FFECE6;
     color: $blanco;
     display: grid;
     justify-content: space-around;
-    
-     -webkit-border-radius: 10px;
+
+    -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     border-radius: 10px;

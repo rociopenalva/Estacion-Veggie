@@ -22,7 +22,7 @@ body {
 }
 
 .bg1{
-    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%), url(img/contacto-header.jpg);
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%), url(img/nosotros-header.jpg);
 }
 
 .bg2{
@@ -86,14 +86,6 @@ a.nav-link:hover:before {
   visibility: visible;
   height: 2px;
 }
-.contenido /* solo cuando es cortita la pag */   {
-    
-    /* will cover the 80% of viewport */
-    overflow: hidden;
-    display: block;
-    position: relative;
-    padding-bottom: 50px;
-}
 
 /*contenido*/
 
@@ -106,8 +98,6 @@ a.nav-link:hover:before {
     letter-spacing: 3pt;
     text-align: center;
 }
-
-/* Subtitulos q agregaré después en carrousel*/
 
 .subtitulos {
     color: #FFF;
@@ -149,7 +139,7 @@ a.nav-link:hover:before {
 }
 
 
-#historia article {
+/*  #historia article {
     margin: 40px 0px;
 }
 
@@ -183,7 +173,13 @@ a.nav-link:hover:before {
 #historia article:hover img {
     -webkit-transform: -webkit-filter: grayscale(0);
     filter: grayscale(0);
+}  */
+
+  #historia article:hover img {
+    -webkit-transform: -webkit-filter: grayscale(0);
+    filter: grayscale(0);
 }
+
 
 /*restaurants*/
 

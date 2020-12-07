@@ -26,12 +26,35 @@
   background-color: #ffece6;
   border-radius: 5px; }
 
-#historia article p {
+#historia article {
+  margin: 40px 0px; }
+
+#historia p {
   color: #FFF !important;
-  background-color: #103737 !important; }
+  background-color: #103737 !important;
+  margin: 10px 0px;
+  font-weight: 200;
+  padding: 20px; }
 
 #historia a {
-  color: #ff9a76 !important; }
+  color: #ff9a76 !important;
+  font-weight: 600;
+  text-decoration: none; }
+
+#historia article p {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+
+#historia img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
 
 .sucursal {
   display: grid;
@@ -59,14 +82,6 @@
   background-image: url(img/Liniers.png);
   background-size: cover;
   min-height: 50vh; }
-
-.otherdiv1 {
-  background: #ffece6;
-  padding: 10px 0px; }
-
-.otherdiv2 {
-  background: #ff9a76 !important;
-  padding-top: 25px; }
 
 .tarjeta {
   padding: 2rem 0.7rem;
