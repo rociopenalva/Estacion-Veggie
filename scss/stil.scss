@@ -29,8 +29,12 @@ $naranjaclaro: #FFECE6;
 
 @media (max-width: 576px) {  
   .titulo__pagina {
-  	font-size:200%
+  	font-size:10vw;
   }
+    
+    #masthead p {
+        text-align: center;
+    }
 }
 
 .bg-light {
