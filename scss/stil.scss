@@ -1,19 +1,16 @@
 /*------------------------------------
-- COLOR primary
+- VARIABLES COLORES
 ------------------------------------*/
 $primary_t1: #ff9a76;
 $primary_t2: #ff7443;
 $primary_t3: #ffece6;
-$primary_t4: #ff12112d;
 $primary_t5: #fa4100;
 $primary_t6: #ff6933;
 $primary_t7: #ff7f52;
 $primary_t8: #c73400;
-$primary_t9: #ff130142;
 
 $primary_shadow: rgba(255, 154, 118, 0.5);
 $primary_text_color_dark_bright: #212529;
-
 
 $verde: #103737;
 $blanco: #FFF;
@@ -40,6 +37,8 @@ $naranjaclaro: #FFECE6;
 }
 
 
+/*BEM*/
+
 .importante__titulo {
     font-family: 'Abril Fatface', cursive;
     font-size: 3rem;
@@ -56,6 +55,8 @@ $naranjaclaro: #FFECE6;
     border-radius: 5px;
 
 }
+
+/*Nosotros*/
 
 #historia {
 
@@ -96,7 +97,12 @@ $naranjaclaro: #FFECE6;
 
 }
 
+/*Restaurants*/
 
+.cajaLocal {
+    
+    filter: drop-shadow(2px 3px 2px rgba(43, 43, 43, 0.71));
+}
 
 .sucursal {
     display: grid;
@@ -129,8 +135,11 @@ $naranjaclaro: #FFECE6;
     background-image: url(img/Liniers.png);
     background-size: cover;
     min-height: 50vh;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
 }
 
+/*contacto*/
 
 .tarjeta {
     padding: 2rem 0.7rem;
@@ -138,18 +147,62 @@ $naranjaclaro: #FFECE6;
     color: $blanco;
     display: grid;
     justify-content: space-around;
-
+    border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    border-radius: 10px;
-    border-radius: 10px;
 }
 
 
+#sticky-footer {
+    background-color: #ff9a76;
+    flex-shrink: none;
+    width: 100%;
+    min-height: 150px;
+    bottom: 0;
+    text-align: center;
+   
+    
+    .copyright{
+        color: rgba(0, 0, 0, 0.5);
+        border-top: 1px solid rgba(0, 0, 0, 0.2); } 
+    
+}
+
+/*Cambiando con variables la plantilla por defecto de bootstrap*/
+
+
+.table-primary,
+.table-primary > th,
+.table-primary > td {
+    background-color: $primary_t1;
+}
+
+.table-secondary,
+.table-secondary > th,
+.table-secondary > td {
+    background-color: $naranjaclaro;
+}
+
+.table-hover .table-primary:hover {
+    background-color: $primary_t3;
+}
+
+.table-hover .table-primary:hover > td,
+.table-hover .table-primary:hover > th {
+    background-color: $primary_t3;
+}
+
+.text-primary {
+    color: $primary_t1 !important;
+}
+
+a.text-primary:hover,
+a.text-primary:focus {
+    color: $primary_t2 !important;
+}
+
 .alert-primary {
     color: $primary_t5;
-    background-color: $primary_t9;
-    border-color: $primary_t4;
 }
 
 .alert-primary hr {
@@ -190,6 +243,9 @@ button.bg-primary:focus {
     color: $primary_text_color_dark_bright;
     background-color: $primary_t1;
     border-color: $primary_t1;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
 }
 
 .btn-primary:hover {
@@ -226,84 +282,21 @@ button.bg-primary:focus {
 
 .btn-outline-primary {
     color: $primary_t1;
-    background-color: transparent;
+    background-color: $blanco;
     border-color: $primary_t1;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    
 }
 
 .btn-outline-primary:hover {
     color: $primary_text_color_dark_bright;
-    background-color: $primary_t1;
+    background-color: $blanco;
     border-color: $primary_t1;
 }
 
 .btn-outline-primary:focus,
 .btn-outline-primary.focus {
     box-shadow: 0 0 0 0.2rem $primary_shadow;
-}
-
-.btn-outline-primary.disabled,
-.btn-outline-primary:disabled {
-    color: $primary_t1;
-    background-color: transparent;
-}
-
-.btn-outline-primary:not(:disabled):not(.disabled):active,
-.btn-outline-primary:not(:disabled):not(.disabled).active,
-.show > .btn-outline-primary.dropdown-toggle {
-    color: $primary_text_color_dark_bright;
-    background-color: $primary_t1;
-    border-color: $primary_t1;
-}
-
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
-.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem $primary_shadow;
-}
-
-.list-group-item-primary {
-    color: $primary_t5;
-    background-color: $primary_t4;
-}
-
-.list-group-item-primary.list-group-item-action:hover,
-.list-group-item-primary.list-group-item-action:focus {
-    color: $primary_t5;
-    background-color: $primary_t3;
-}
-
-.list-group-item-primary.list-group-item-action.active {
-    color: $primary_text_color_dark_bright;
-    background-color: $primary_t5;
-    border-color: $primary_t5;
-}
-
-.table-primary,
-.table-primary > th,
-.table-primary > td {
-    background-color: $primary_t1;
-}
-
-.table-secondary,
-.table-secondary > th,
-.table-secondary > td {
-    background-color: $naranjaclaro;
-}
-
-.table-hover .table-primary:hover {
-    background-color: $primary_t3;
-}
-
-.table-hover .table-primary:hover > td,
-.table-hover .table-primary:hover > th {
-    background-color: $primary_t3;
-}
-
-.text-primary {
-    color: $primary_t1 !important;
-}
-
-a.text-primary:hover,
-a.text-primary:focus {
-    color: $primary_t2 !important;
 }

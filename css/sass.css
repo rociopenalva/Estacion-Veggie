@@ -1,5 +1,5 @@
 /*------------------------------------
-- COLOR primary
+- VARIABLES COLORES
 ------------------------------------*/
 .titulo__pagina {
   color: #103737; }
@@ -13,6 +13,7 @@
 .bg-light {
   background-color: #ffece6 !important; }
 
+/*BEM*/
 .importante__titulo {
   font-family: 'Abril Fatface', cursive;
   font-size: 3rem;
@@ -26,6 +27,7 @@
   background-color: #ffece6;
   border-radius: 5px; }
 
+/*Nosotros*/
 #historia article {
   margin: 40px 0px; }
 
@@ -56,6 +58,10 @@
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out; }
 
+/*Restaurants*/
+.cajaLocal {
+  filter: drop-shadow(2px 3px 2px rgba(43, 43, 43, 0.71)); }
+
 .sucursal {
   display: grid;
   align-content: center;
@@ -81,23 +87,59 @@
 #Liniers {
   background-image: url(img/Liniers.png);
   background-size: cover;
-  min-height: 50vh; }
+  min-height: 50vh;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; }
 
+/*contacto*/
 .tarjeta {
   padding: 2rem 0.7rem;
   background: #103737;
   color: #FFF;
   display: grid;
   justify-content: space-around;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border-radius: 10px;
-  border-radius: 10px; }
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; }
+
+#sticky-footer {
+  background-color: #ff9a76;
+  flex-shrink: none;
+  width: 100%;
+  min-height: 150px;
+  bottom: 0;
+  text-align: center; }
+  #sticky-footer .copyright {
+    color: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.2); }
+
+/*Cambiando con variables la plantilla por defecto de bootstrap*/
+.table-primary,
+.table-primary > th,
+.table-primary > td {
+  background-color: #ff9a76; }
+
+.table-secondary,
+.table-secondary > th,
+.table-secondary > td {
+  background-color: #FFECE6; }
+
+.table-hover .table-primary:hover {
+  background-color: #ffece6; }
+
+.table-hover .table-primary:hover > td,
+.table-hover .table-primary:hover > th {
+  background-color: #ffece6; }
+
+.text-primary {
+  color: #ff9a76 !important; }
+
+a.text-primary:hover,
+a.text-primary:focus {
+  color: #ff7443 !important; }
 
 .alert-primary {
-  color: #fa4100;
-  background-color: #ff130142;
-  border-color: #ff12112d; }
+  color: #fa4100; }
 
 .alert-primary hr {
   border-top-color: #ffece6; }
@@ -129,7 +171,10 @@ button.bg-primary:focus {
 .btn-primary {
   color: #212529;
   background-color: #ff9a76;
-  border-color: #ff9a76; }
+  border-color: #ff9a76;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; }
 
 .btn-primary:hover {
   color: #212529;
@@ -160,69 +205,17 @@ button.bg-primary:focus {
 
 .btn-outline-primary {
   color: #ff9a76;
-  background-color: transparent;
-  border-color: #ff9a76; }
+  background-color: #FFF;
+  border-color: #ff9a76;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; }
 
 .btn-outline-primary:hover {
   color: #212529;
-  background-color: #ff9a76;
+  background-color: #FFF;
   border-color: #ff9a76; }
 
 .btn-outline-primary:focus,
 .btn-outline-primary.focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 154, 118, 0.5); }
-
-.btn-outline-primary.disabled,
-.btn-outline-primary:disabled {
-  color: #ff9a76;
-  background-color: transparent; }
-
-.btn-outline-primary:not(:disabled):not(.disabled):active,
-.btn-outline-primary:not(:disabled):not(.disabled).active,
-.show > .btn-outline-primary.dropdown-toggle {
-  color: #212529;
-  background-color: #ff9a76;
-  border-color: #ff9a76; }
-
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
-.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 154, 118, 0.5); }
-
-.list-group-item-primary {
-  color: #fa4100;
-  background-color: #ff12112d; }
-
-.list-group-item-primary.list-group-item-action:hover,
-.list-group-item-primary.list-group-item-action:focus {
-  color: #fa4100;
-  background-color: #ffece6; }
-
-.list-group-item-primary.list-group-item-action.active {
-  color: #212529;
-  background-color: #fa4100;
-  border-color: #fa4100; }
-
-.table-primary,
-.table-primary > th,
-.table-primary > td {
-  background-color: #ff9a76; }
-
-.table-secondary,
-.table-secondary > th,
-.table-secondary > td {
-  background-color: #FFECE6; }
-
-.table-hover .table-primary:hover {
-  background-color: #ffece6; }
-
-.table-hover .table-primary:hover > td,
-.table-hover .table-primary:hover > th {
-  background-color: #ffece6; }
-
-.text-primary {
-  color: #ff9a76 !important; }
-
-a.text-primary:hover,
-a.text-primary:focus {
-  color: #ff7443 !important; }

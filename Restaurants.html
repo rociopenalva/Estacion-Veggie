@@ -83,7 +83,7 @@
         </div>
     </header>
 
-    <section class="bg-primary row no-gutters wow animate__animated animate__fadeInDown">
+    <section class="cajaLocal row no-gutters wow animate__animated animate__fadeInDown mb-3">
         <article class=" sucursal col-12 col-md-3" id="SanJusto">
             <h2 class="col-12">San Justo</h2>
             <div class="col-12"><i class="fas fa-map-marker-alt"></i> Arieta 2215</div>
@@ -94,7 +94,7 @@
         </article>
 </section>
     
-        <section class="bg-primary row no-gutters wow animate__animated animate__fadeInDown animate__delay-0.2s">
+      <section class="cajaLocal row no-gutters wow animate__animated animate__fadeInDown animate__delay-0.2s mb-3">
         <article class=" sucursal col-12 col-md-3" id="Ramos">
             <h2 class="col-12">Ramos Mejía</h2>
             <div class="col-12"><i class="fas fa-map-marker-alt"></i> Alte. Brown 523</div>
@@ -105,7 +105,7 @@
         </article>
     </section>
     
-        <section class="bg-primary row no-gutters wow animate__animated animate__fadeInDown animate__delay-0.2s">
+    <section class="cajaLocal row no-gutters wow animate__animated animate__fadeInDown animate__delay-0.2s mb-3">
         <article class=" sucursal col-12 col-md-3" id="Liniers">
             <h2 class="col-12">Liniers</h2>
             <div class="col-12"><i class="fas fa-map-marker-alt"></i> Av. Rivadavia 11400</div>
@@ -116,11 +116,22 @@
         </article>
     </section>
 
-    <footer id="sticky-footer" class="py-4">
-        <div class="container text-center">
-            <small>Copyright &copy; Estación Veggie</small>
-        </div>
-    </footer>
+    
+     <!--flexbox en footer-->
+ <footer id="sticky-footer" class="py-2 mt-5 ">
+     <div class="py-4 container align-items-center d-flex align-content-around flex-column ">
+
+         <form action="" class="suscrip">
+             Suscribite y no te pierdas las novedades
+             <input type="email" name="email" class="label-floating " placeholder="Email (requerido)" required />
+             <a href="#" class="btn btn-outline-primary">Ok</a>
+         </form>
+         <div class="col copyright mt-3">
+             <small>Copyright &copy; Estación Veggie</small>
+         </div>
+     </div>
+
+ </footer>
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
